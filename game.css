@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg--color: #2D3142;
+    --second--bg--color: #2176FF;
+    --text--color: #EF8354;
+    --social--color: #FCFF4B;
+    --main--color: #E6E6EA;
+}
+
+body{
+    background-image: url(https://a-static.besthdwallpaper.com/cold-mission-destiny-2-beyond-light-video-game-wallpaper-2048x1536-73202_26.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.container{
+    border: 5px solid var(--social--color);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 10px; */
+    background-color: var(--second--bg--color);
+    width: 610px;
+    height: 450px;
+}
+.user_box{
+    position: absolute;
+    left: 10%;
+    top: 17%;
+    border-radius: 10px;
+    outline: none;
+    height: 50px;
+    width: 465px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+::placeholder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imgBox img{
+    width: 0;
+    /* position: absolute;
+    top: 250px;
+    left: 350px;
+    width: 200px; */
+    transition: width 1s ease-in-out;
+}
+
+.img img{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 43%;
+    left: 20%;
+    transition: width 1s ease-in-out;
+}
+
+.btn button{
+    height: 50px;
+    width: 180px;
+    border-radius: 35px;
+    border: 5px solid lightgreen;
+    position: absolute;
+    top: 140px;
+    left: 64px;
+    background: transparent;
+    transition: 0.7s ease-in;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button:hover{
+    background-color: lightgreen;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.again,.start{
+    display: none;
+}
+
+.sub{
+    display: flex;
+
+}
+
+ .content{
+    display: none;
+    position: absolute;
+    top: 340px;
+    width: 330px;
+    height: 80px;
+    left: 25px;
+    /* background-color: var(--main--color); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    transition: width 1s ease-in-out;
+ }
+
+
+
+@media screen and (max-width:650px){
+    .container{
+        width: 400px;
+    }
+    .user_box{
+        width: 300px;
+    }
+    .btn button{
+        width: 130px;
+        margin-left: -22px;
+        font-size:15px;
+    }
+    .btn button:hover{
+        font-size: 18px;
+    }
+    .img img{
+        width: 330px;
+        height: 200px;
+        margin-top: 2pc;
+        margin-left: -3pc;
+    }
+    .content{
+        width: 230px;
+    }
+    .imgBox img{
+        width: 150px;
+        margin-left: -9pc;
+        margin-top: 12px;
+    }
+}
+
+
+@media screen and (max-width:430px){
+    .container{
+        width: 250px;
+        height: 400px;
+    }
+    .user_box{
+        width: 220px;
+        margin-left: -10px;
+        margin-top: -2pc;
+    }
+
+    ::placeholder{
+        font-size: 20px;
+    }
+    .btn button{
+        width: 100px;
+        margin-left: -3pc;
+        font-size:15px;
+        margin-top: -3pc;
+    }
+    .img img{
+        width: 250px;
+        height: 150px;
+        margin-top: 2.5pc;
+        margin-left: -3pc;
+    }
+    .content{
+        width: 10px;
+        margin-top: -11pc;
+        font-size: 18px;
+    }
+    .imgBox img{
+        margin-left: -22pc;
+        margin-top: -2pc;
+    }
+}
+
